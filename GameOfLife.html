@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Game of life</title>
+    <script type="text/javascript" src="engine.js"></script>
+</head>
+
+<body onload="start()">
+    <div>
+        <div id="control-panel">
+            Number of creatures <input type="number" id="creatures-count" value="1000"></input>
+            <button onclick="start()">Apply</button>
+        </div>
+        <div>
+            <canvas width="1000" height="1000" id="game-screen">
+                the game's canvas
+            </canvas>
+        </div>
+    </div>
+</body>
+
+</html>
