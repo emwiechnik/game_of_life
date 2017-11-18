@@ -38,11 +38,7 @@ function GameScreenGrid(settings) {
         cellSize = private.settings.cellSize;
         color = creature.isAlive ? aliveColor : deadColor;
         private.canvas.fillStyle = color;
-        x1 = col * cellSize;
-        y1 = row * cellSize;
-        x2 = x1 + cellSize;
-        y2 = y1 + cellSize;
-        private.canvas.fillRect(x1, y1, cellSize, cellSize);
+        private.canvas.fillRect(col * cellSize, row * cellSize, cellSize, cellSize);
     }
 }
 
