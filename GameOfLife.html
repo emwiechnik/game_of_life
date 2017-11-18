@@ -8,13 +8,19 @@
 <body onload="start()">
     <div>
         <div id="control-panel">
-            Number of creatures <input type="number" id="creatures-count" value="1000"></input>
-            <button onclick="start()">Apply</button>
+            <p> Number of creatures
+                <input type="number" id="creatures-count" value="100000"></input>
+            </p>
+            <!-- <p>Come to life if you have
+                <input type="text" class="ruleValueInput" id="live-neighbours-rule" value="3"></input> neighbours
+            </p>
+            <p>Die if you have
+                <input type="text" class="ruleValueInput" id="die-neighbours-rule" value="4"></input> neighbours
+            </p> -->
+            <button onclick="apply()">Apply</button>
         </div>
         <div>
-            <canvas width="1000" height="1000" id="game-screen">
-                the game's canvas
-            </canvas>
+            <canvas width="1000" height="1000" id="game-screen"></canvas>
         </div>
     </div>
 </body>
